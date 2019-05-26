@@ -1,0 +1,13 @@
+﻿@model Dictionary<string, object>
+<div class="bg-primary card-body">
+    <h4>User Details</h4>
+</div>
+<table class="table table-sm table-bordered">
+    @foreach(var kvp in Model)
+    {
+        <tr>
+            <th>@kvp.Key</th>
+            <td>@kvp.Value</td>
+        </tr>
+    }
+</table>
